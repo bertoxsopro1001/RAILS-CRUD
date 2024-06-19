@@ -1,0 +1,9 @@
+<form action="/new/add" method="post">
+    <input type="text" name="name">
+    <input type="submit">
+</form>
+<% flash.each do |key, value| %>
+    <p class="flash <%= key %>">
+      <%= value %>
+    </p>
+  <% end %>

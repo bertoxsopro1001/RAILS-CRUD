@@ -1,0 +1,13 @@
+<a href="new">add</a></li>
+<ul>
+    <% @user.each do |user| %>
+        <li> <%= user.name %> </li>
+        <a href="/user/view/<%= user.id %>">show</a></li>
+      
+        
+        
+    <% end %>
+
+
+
+</ul>
